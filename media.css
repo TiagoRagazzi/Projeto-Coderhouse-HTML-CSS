@@ -1,0 +1,63 @@
+/* Responsividade para 769px a 1279px */
+@media (min-width: 769px) and (max-width: 1279px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .Menu nav a {
+        font-size: 16px;
+    }
+
+    .RedesSociais button {
+        font-size: 22px;
+    }
+}
+
+/* Responsividade para 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .Menu nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .RedesSociais button {
+        font-size: 20px;
+    }
+}
+
+/* Responsividade para 0 a 480px */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .Menu nav a {
+        display: block;
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .RedesSociais button {
+        font-size: 18px;
+    }
+
+    
+}

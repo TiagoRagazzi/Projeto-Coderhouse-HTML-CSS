@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+<!--aplica uma característica de todo o elemento do site>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body{
+    background-color: rgb(34,34,34);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.RedesSociais{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Menu{
+    width: 50%;
+}
+
+.Menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.Menu nav a::after{
+    content:" ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #FF2500,#FF7200);
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    transition: width 0.5s;
+}
+
+.Menu nav a:hover::after{
+    width: 60px;
+        
+}
+
+.RedesSociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #FF2500,#FF7200);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.RedesSociais button i{
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between; /* Adiciona espaçamento entre a imagem e o texto */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+}
+
+.Contato {
+    width: 50%; /* A imagem ocupará 50% da largura do container */
+}
+
+.Contato img {
+    width: 100%; /* A imagem ocupa toda a largura do div */
+}
+
+.ConteudoTexto {
+    width: 50%; /* O texto ocupará os outros 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o h2 e o p fiquem empilhados */
+    margin-left: 40px; /* Ajuste para espaçar a área de texto da imagem */
+}
+
+.Título {
+    color: rgb(215, 115, 38);
+    font-size: 45px;
+    margin-bottom: 30px; /* Espaçamento abaixo do h2 */
+    margin-top: 0px;
+}
+
+.TextoPrincipal {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 0px; /* Espaçamento entre o h2 e o p */
+}
+
+.footer {
+    line-height: 40px;
+    max-width: 500px;
+    font-size: 13px;
+    text-align: center; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
